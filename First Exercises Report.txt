@@ -1,0 +1,24 @@
+Single Thread Program:
+Time to sum 500000 items: 0.002143
+Time to sum 5000000 items: 0.023110
+Time to sum 50000000 items: 0.109661
+Time to sum 500000000 items: 1.439680
+
+Two Thread Program:
+Time to sum 500000 items: 0.003246
+Time to sum 5000000 items: 0.025091
+Time to sum 50000000 items: 0.109624
+Time to sum 500000000 items: 1.439710
+
+Ten Thread Program:
+Time to sum 500000 items: 0.004496
+Time to sum 5000000 items: 0.042728
+Time to sum 50000000 items: 0.237769
+Time to sum 500000000 items: 2.840629
+
+If we compare the two thread run vs the single thread run, we can see that as the amount of items
+in the array increase, it gets closer and closer to the time of the single thread program. It will likely surpass it's time
+if we were to multiply the amount of items on the list by another ten. The ten thread program lags behind significantly, likely due to all the overhead,
+however it is imporant to note that the time it takes to complete the summation with the ten thread program varies wildly compared to the single and double
+thread programs. It is also important to note that as I increase the thread count, the accuracy of the summation decreases. I have no idea why this happenes, and I
+have throughly checked my code for a apparent cause, but I have yet to find one. 
